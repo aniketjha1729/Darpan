@@ -1,0 +1,84 @@
+.introContainer {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 0;
+  z-index: -1;
+}
+
+.avtarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.nameIntroContainer {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .nameIntroContainer {
+    margin-top: 20px;
+  }
+}
+
+.nameIntro {
+  font-size: 70px;
+  font-family: "Courgette", cursive;
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .nameIntro {
+    font-size: 30px;
+    font-family: "Courgette", cursive;
+    color: aliceblue;
+  }
+}
+
+.briefIntro {
+  font-size: 20px;
+  color: aliceblue;
+  width: 700px;
+  margin-left: 27%;
+}
+@media only screen and (min-width: 600px) {
+  .briefIntroMobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .briefIntro {
+    display: none;
+  }
+}
+
+.briefIntroMobile {
+  width: 100%;
+}
+
+.socialContainer {
+  width: 500px;
+  margin-left: 32%;
+}
+
+.socialIconContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .socialContainer{
+    width: 400px;
+    margin-left: 0%;
+  }
+}

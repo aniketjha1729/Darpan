@@ -1,0 +1,18 @@
+.projectContainer {
+  margin-top: 30px;
+}
+
+.projectHeading {
+  display: flex;
+  justify-content: center;
+  font-family: "Comfortaa", cursive;
+  font-weight: 500;
+  color: aliceblue;
+  font-size: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectHeading {
+    font-size: 30px;
+  }
+}
