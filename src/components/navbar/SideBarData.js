@@ -16,16 +16,16 @@ export const SidebarData = [
     icon: <IoIcons.IoIosPaper />,
     cName: "nav-text",
   },
-  {
-    title: "Clock",
-    path: "/watch",
-    icon: <FaIcons.FaClock />,
-    cName: "nav-text",
-  },
-  {
-    title: "Calculator",
-    path: "/calculator",
-    icon: <FaIcons.FaCalculator />,
-    cName: "nav-text",
-  }
+  // {
+  //   title: "Clock",
+  //   path: "/watch",
+  //   icon: <FaIcons.FaClock />,
+  //   cName: "nav-text",
+  // },
+  // {
+  //   title: "Calculator",
+  //   path: "/calculator",
+  //   icon: <FaIcons.FaCalculator />,
+  //   cName: "nav-text",
+  // }
 ];
