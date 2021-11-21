@@ -16,3 +16,13 @@
     font-size: 30px;
   }
 }
+
+.card {
+  font-family: "Comfortaa", cursive;
+  font-weight: 500;
+}
+
+.techUsed {
+  display: flex;
+  justify-content: space-around;
+}
