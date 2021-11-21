@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import Avtar from "./static/Avtar.png";
 import Skils from "./components/Skils";
+import { Link } from "react-router-dom";
 import Project from "./components/Project";
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 const Home = () => {
@@ -48,16 +49,25 @@ const Home = () => {
       <div className="socialContainer">
         <div className="socialIconContainer">
           <div>
-            <FaFacebook size="55px" color="aliceblue" />
+            <a href="https://www.facebook.com/aniketjha1729/">
+              {" "}
+              <FaFacebook size="55px" color="aliceblue" />
+            </a>
           </div>
           <div>
-            <FaLinkedin size="55px" color="aliceblue" />
+            <a href="https://www.linkedin.com/in/aniketjha1729/">
+              <FaLinkedin size="55px" color="aliceblue" />
+            </a>
           </div>
           <div>
-            <FaGithub size="55px" color="aliceblue" />
+            <a href="https://github.com/aniketjha1729/">
+              <FaGithub size="55px" color="aliceblue" />
+            </a>
           </div>
           <div>
+            <a href="https://www.instagram.com/aniketjha1729/">
             <FaInstagram size="55px" color="aliceblue" />
+            </a>
           </div>
         </div>
       </div>
