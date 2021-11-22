@@ -1,6 +1,7 @@
 .introContainer {
   top: 0;
   z-index: -1;
+  color: aliceblue;
 }
 
 .avtarContainer {
@@ -41,11 +42,13 @@
 @media only screen and (min-width: 600px) {
   .briefIntroMobile {
     display: none;
+    color: aliceblue;
   }
 }
 @media only screen and (max-width: 600px) {
   .briefIntro {
     display: none;
+    color: aliceblue;
   }
 }
 
