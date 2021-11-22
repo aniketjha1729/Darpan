@@ -15,83 +15,38 @@
   .skillHeading {
     font-size: 30px;
   }
-  .badgeContainer {
-    display: none;
-  }
 }
 
-.badgeContainer {
+.donutContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.donut {
+  width: 10em;
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-  .badgeContainer {
-    display: none;
+  .donut {
+    font-family: "Comfortaa", cursive;
+    width: 0em;
+    flex: 50%;
   }
 }
 
-.mobilebadgeContainer{
-  margin-top: 30px;
-}
-
-@media only screen and (min-width: 600px) {
-  .mobilebadgeContainer {
-    display: none;
+@media only screen and (max-width: 600px) {
+  .donutContainer .donut:nth-child(5) div {
+    margin-left: 22%;
+    width: 10em;
+    flex: 10%;
   }
 }
 
-
-.box {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.box .percent {
-  position: relative;
-  width: 150px;
-  height: 150px;
-}
-
-.box .percent svg {
-  position: relative;
-  width: 150px;
-  height: 150px;
-}
-
-.box .percent svg circle {
-  width: 150px;
-  height: 150px;
-  fill: none;
-  stroke-width: 10;
-  stroke: #000;
-  transform: translate(5px, 5px);
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
-}
-
-.box .percent svg circle:nth-child(1) {
-  stroke-dashoffset: 0;
-  stroke: rgb(0, 0, 0);
-}
-
-.box .percent svg circle:nth-child(2) {
-  stroke: aliceblue;
-}
-
-.box .percent .number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.donut div:nth-child(2) {
+  margin-top: 10px;
 }
