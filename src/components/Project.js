@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Eduhub from "../static/eduhub.png";
+import SortMyMess from "../static/sortmymess.png";
+import ReduxBuilder from "../static/reduxbui.png";
 import "./project.css";
 const Project = () => {
   return (
@@ -11,18 +14,23 @@ const Project = () => {
       </div>
       <div className="row justify-content-around projectdec">
         <div className="col-12 col-md-5">
-          <div className="card text-center">
-            <img
-              src="https://images.unsplash.com/photo-1637247475270-f14f51510708?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              className="card-img"
-              alt="..."
-              style={{ opacity: "0.5" }}
-            />
-            <div className="card-img-overlay">
-              <h4 className="card-title">
-                <b>EduHub</b>{" "}
-              </h4>
-              <p className="card-text">
+          <div className="projectTitle text-center">
+            <b>EduHub</b>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img
+                  src={Eduhub}
+                  alt="Avatar"
+                  style={{
+                    width: "100%",
+                    height: "300px",
+                    borderRadius: "5px",
+                  }}
+                />
+              </div>
+              <div className="flip-card-back">
                 <b>
                   This is a social newtwork created for a college on which
                   students & tichers can coordinate and can try to perform daily
@@ -30,50 +38,55 @@ const Project = () => {
                   the form of forum where students can ask their doubts can it
                   can be answered by concered teacher or by any peers.
                 </b>
-              </p>
-              <div className="techUsed">
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    ReactJS
-                  </button>
+                <div className="gitgubLink">
+                  <a href="https://github.com/aniketjha1729/EduHub">
+                    https://github.com/aniketjha1729/EduHub
+                  </a>
                 </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    NodeJS
-                  </button>
-                </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Mongo
-                  </button>
-                </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Express
-                  </button>
+                <div className="techUsed">
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      NodeJS
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Mongo
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Express
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Socket
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="card-footer">
-              <Link to="https://github.com/aniketjha1729/EduHub">
-                https://github.com/aniketjha1729/EduHub
-              </Link>
             </div>
           </div>
         </div>
         <div className="col-12 col-md-5">
-          <div className="card text-center">
-            <img
-              src="https://images.unsplash.com/photo-1637247475270-f14f51510708?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              className="card-img"
-              alt="..."
-              style={{ opacity: "0.5" }}
-            />
-            <div className="card-img-overlay">
-              <h4 className="card-title">
-                <b>SortMyMess</b>{" "}
-              </h4>
-              <p className="card-text">
+          <div className="projectTitle text-center">
+            <b>SortMyMess</b>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img
+                  src={SortMyMess}
+                  alt="Avatar"
+                  style={{
+                    width: "100%",
+                    height: "300px",
+                    borderRadius: "5px",
+                  }}
+                />
+              </div>
+              <div className="flip-card-back">
                 <b>
                   This is a platform for users who live in mess/pg. User can
                   signup with a common group id and all the users added in that
@@ -82,29 +95,29 @@ const Project = () => {
                   individual shares of bills which they own automatically on
                   their respective mailIds.
                 </b>
-              </p>
-              <div className="techUsed">
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    NodeJS
-                  </button>
+                <div className="gitgubLink">
+                  <a href="https://github.com/aniketjha1729/SortMyMess">
+                    https://github.com/aniketjha1729/SortMyMess
+                  </a>
                 </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Mongo
-                  </button>
-                </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Express
-                  </button>
+                <div className="techUsed">
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      NodeJS
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Mongo
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Material Ui
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="card-footer">
-              <Link to="https://github.com/aniketjha1729/SortMyMess">
-                https://github.com/aniketjha1729/SortMyMess
-              </Link>
             </div>
           </div>
         </div>
@@ -112,18 +125,23 @@ const Project = () => {
       <br />
       <div className="row justify-content-around projectdec">
         <div className="col-12 col-md-5">
-          <div className="card text-center">
-            <img
-              src="https://images.unsplash.com/photo-1637247475270-f14f51510708?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              className="card-img"
-              alt="..."
-              style={{ opacity: "0.5" }}
-            />
-            <div className="card-img-overlay">
-              <h4 className="card-title">
-                <b>ReduxBuilder</b>{" "}
-              </h4>
-              <p className="card-text">
+          <div className="projectTitle text-center">
+            <b>ReduxBuilder</b>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img
+                  src={ReduxBuilder}
+                  alt="Avatar"
+                  style={{
+                    width: "100%",
+                    height: "300px",
+                    borderRadius: "5px",
+                  }}
+                />
+              </div>
+              <div className="flip-card-back">
                 <b>
                   This is open source npm package which creates boiler plate for
                   redux implementation. We all know how hectic is to setup the
@@ -131,65 +149,70 @@ const Project = () => {
                   to get started. By using this package we can have all the
                   boiler plate ready to serve redux.
                 </b>
-              </p>
-              <div className="techUsed">
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Javascript
-                  </button>
+                <div className="gitgubLink">
+                  <a href="https://github.com/aniketjha1729/EduHub">
+                    https://github.com/aniketjha1729/EduHub
+                  </a>
+                </div>
+                <div className="techUsed">
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Springboot
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      MySql
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Hibernate
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      Eureka
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="card-footer">
-              <Link to="https://github.com/aniketjha1729/EduHub">
-                https://github.com/aniketjha1729/EduHub
-              </Link>
             </div>
           </div>
         </div>
         <div className="col-12 col-md-5">
-          <div className="card text-center">
-            <img
-              src="https://images.unsplash.com/photo-1637247475270-f14f51510708?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              className="card-img"
-              alt="..."
-              style={{ opacity: "0.5" }}
-            />
-            <div className="card-img-overlay">
-              <h4 className="card-title">
-                <b>StudentMangementSystem</b>{" "}
-              </h4>
-              <p className="card-text">
+          <div className="projectTitle text-center">
+            <b>RestApi&nbsp;(MicroService)</b>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img
+                  src="https://miro.medium.com/max/702/1*rDDUaNlx2uJT_DWCSa_o1Q.png"
+                  alt="Avatar"
+                  style={{
+                    width: "100%",
+                    height: "300px",
+                    borderRadius: "5px",
+                  }}
+                />
+              </div>
+              <div className="flip-card-back">
                 <b>
                   This is a microservice rest-api developed in springboot.
                   Various features like crud and authentication are there which
                   are provided by this api.
                 </b>
-              </p>
-              <div className="techUsed">
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Springboot
-                  </button>
-                </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    MySql
-                  </button>
-                </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Hibernate
-                  </button>
-                </div>
-                <div>
-                  <button type="button" className="btn btn-secondary">
-                    Eureka
-                  </button>
+
+                <div className="techUsed">
+                  <div>
+                    <button type="button" className="btn btn-secondary">
+                      JavaScript
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
