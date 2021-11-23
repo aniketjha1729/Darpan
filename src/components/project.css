@@ -1,5 +1,5 @@
 .projectContainer {
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .projectHeading {
@@ -10,6 +10,11 @@
   color: aliceblue;
   font-size: 60px;
   margin-bottom: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .projectHeading {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -26,7 +31,6 @@
 .projectdec {
   color: black;
 }
-
 
 .flip-card {
   background-color: transparent;
@@ -52,6 +56,18 @@
   font-size: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+  .projectTitle {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gitgubLink {
+    font-size: 15px;
+  }
+}
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -74,7 +90,7 @@
   border-radius: 5px;
 }
 
-.gitgubLink{
+.gitgubLink {
   margin-top: 5px;
 }
 
@@ -84,3 +100,9 @@
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 600px) {
+  .springtech {
+    font-size: 12px;
+    
+  }
+}
