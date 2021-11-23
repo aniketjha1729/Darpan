@@ -2,9 +2,10 @@ import React from "react";
 import "./home.css";
 import Avtar from "./static/Avtar.png";
 import Skils from "./components/Skils";
-import { Link } from "react-router-dom";
 import Project from "./components/Project";
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 const Home = () => {
   const myname = "Aniket";
   const myNameAnnimation = myname.split("");
@@ -81,6 +82,8 @@ const Home = () => {
       </div>
       <Skils />
       <Project />
+      <Contact />
+      <Footer/>
     </div>
   );
 };

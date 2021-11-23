@@ -157,22 +157,7 @@ const Project = () => {
                 <div className="techUsed">
                   <div>
                     <button type="button" className="btn btn-secondary">
-                      Springboot
-                    </button>
-                  </div>
-                  <div>
-                    <button type="button" className="btn btn-secondary">
-                      MySql
-                    </button>
-                  </div>
-                  <div>
-                    <button type="button" className="btn btn-secondary">
-                      Hibernate
-                    </button>
-                  </div>
-                  <div>
-                    <button type="button" className="btn btn-secondary">
-                      Eureka
+                      Javacsript
                     </button>
                   </div>
                 </div>
@@ -201,13 +186,42 @@ const Project = () => {
                 <b>
                   This is a microservice rest-api developed in springboot.
                   Various features like crud and authentication are there which
-                  are provided by this api.
+                  are provided by this api. All the apis are served as
+                  microservices and and synced wiht the help of Edureka.
+                  Hibernate ORM has been used for managing the Myswl database.
                 </b>
 
                 <div className="techUsed">
                   <div>
-                    <button type="button" className="btn btn-secondary">
-                      JavaScript
+                    <button
+                      type="button"
+                      className="btn btn-secondary springtech"
+                    >
+                      Springboot
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      className="btn btn-secondary springtech"
+                    >
+                      MySql
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      className="btn btn-secondary springtech"
+                    >
+                      Hibernate
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      className="btn btn-secondary springtech"
+                    >
+                      Eureka
                     </button>
                   </div>
                 </div>
