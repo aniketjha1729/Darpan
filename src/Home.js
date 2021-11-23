@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import Project from "./components/Project";
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 const Home = () => {
+  const myname = "Aniket";
+  const myNameAnnimation = myname.split("");
+  console.log(myNameAnnimation);
+
   return (
     <div className="introContainer">
       <div className="avtarContainer">
@@ -22,7 +26,11 @@ const Home = () => {
         />
       </div>
       <div className="nameIntroContainer">
-        <p className="nameIntro">Hi, I'm Aniket</p>
+        <p className="nameIntro">Hi, I'm&nbsp;</p>
+
+        {myNameAnnimation.map((n, key) => (
+          <div className="nameIntroAnimate">{n}</div>
+        ))}
       </div>
       <div className="briefIntro">
         <div>
@@ -66,7 +74,7 @@ const Home = () => {
           </div>
           <div>
             <a href="https://www.instagram.com/aniketjha1729/">
-            <FaInstagram size="55px" color="aliceblue" />
+              <FaInstagram size="55px" color="aliceblue" />
             </a>
           </div>
         </div>
