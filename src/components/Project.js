@@ -9,7 +9,7 @@ const Project = () => {
           <u>Projects & Open Source</u>
         </b>
       </div>
-      <div className="row justify-content-around">
+      <div className="row justify-content-around projectdec">
         <div className="col-12 col-md-5">
           <div className="card text-center">
             <img
@@ -110,7 +110,7 @@ const Project = () => {
         </div>
       </div>
       <br />
-      <div className="row justify-content-around">
+      <div className="row justify-content-around projectdec">
         <div className="col-12 col-md-5">
           <div className="card text-center">
             <img

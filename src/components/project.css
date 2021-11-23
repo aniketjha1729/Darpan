@@ -22,6 +22,10 @@
   font-weight: 500;
 }
 
+.projectdec{
+  color: black;
+}
+
 .techUsed {
   display: flex;
   justify-content: space-around;
