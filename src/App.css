@@ -24,13 +24,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2a4f5f;
+  background: aliceblue;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #23404a;
+  background: rgb(197, 197, 197);
 }
 
 .home,

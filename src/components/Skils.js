@@ -19,7 +19,10 @@ const Skils = () => {
                   {
                     data: [40, 60],
                     backgroundColor: ["rgb(240,248,255)", "rgb(40,76,91)"],
-                    borderColor: ["rgba(0, 0, 0, 1)", "rgba(0,0,0,1)"],
+                    borderColor: [
+                      "rgba(240, 248, 255, 1)",
+                      "rgba(240, 248, 255, 1)",
+                    ],
                     borderWidth: 2,
                   },
                 ],
@@ -38,7 +41,10 @@ const Skils = () => {
                   {
                     data: [85, 15],
                     backgroundColor: ["rgb(240,248,255)", "rgb(37,68,80)"],
-                    borderColor: ["rgba(0, 0, 0, 1)", "rgba(0,0,0,1)"],
+                    borderColor: [
+                      "rgba(240, 248, 255, 1)",
+                      "rgba(240, 248, 255, 1)",
+                    ],
                     borderWidth: 2,
                   },
                 ],
@@ -57,7 +63,11 @@ const Skils = () => {
                   {
                     data: [80, 20],
                     backgroundColor: ["rgb(240,248,255)", "rgb(33,60,70)"],
-                    borderColor: ["rgba(0, 0, 0, 1)", "rgba(0,0,0,1)"],
+                    borderColor: [
+                      "rgba(240, 248, 255, 1)",
+                      "rgba(240, 248, 255, 1)",
+                    ],
+
                     borderWidth: 2,
                   },
                 ],
@@ -76,7 +86,11 @@ const Skils = () => {
                   {
                     data: [57, 43],
                     backgroundColor: ["rgb(240,248,255)", "rgb(28,52,60)"],
-                    borderColor: ["rgba(0, 0, 0, 1)", "rgba(0,0,0,1)"],
+                    borderColor: [
+                      "rgba(240, 248, 255, 1)",
+                      "rgba(240, 248, 255, 1)",
+                    ],
+
                     borderWidth: 2,
                   },
                 ],
@@ -95,7 +109,10 @@ const Skils = () => {
                   {
                     data: [87, 13],
                     backgroundColor: ["rgb(240,248,255)", "rgb(22,43,51)"],
-                    borderColor: ["rgba(0, 0, 0, 1)", "rgba(0,0,0,1)"],
+                    borderColor: [
+                      "rgba(240, 248, 255, 1)",
+                      "rgba(240, 248, 255, 1)",
+                    ],
                     borderWidth: 2,
                   },
                 ],
