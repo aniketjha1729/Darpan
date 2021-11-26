@@ -9,7 +9,6 @@ import Footer from "./components/Footer";
 const Home = () => {
   const myname = "Aniket";
   const myNameAnnimation = myname.split("");
-  console.log(myNameAnnimation);
 
   return (
     <div className="introContainer">
@@ -30,7 +29,9 @@ const Home = () => {
         <p className="nameIntro">Hi, I'm&nbsp;</p>
 
         {myNameAnnimation.map((n, key) => (
-          <div className="nameIntroAnimate">{n}</div>
+          <div key={key} className="nameIntroAnimate">
+            {n}
+          </div>
         ))}
       </div>
       <div className="briefIntro">
@@ -83,7 +84,7 @@ const Home = () => {
       <Skils />
       <Project />
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
