@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Eduhub from "../static/eduhub.png";
-import SortMyMess from "../static/sortmymess.png";
-import ReduxBuilder from "../static/reduxbui.png";
+import Eduhub from "../../static/eduhub.png";
+import SortMyMess from "../../static/sortmymess.png";
+import ReduxBuilder from "../../static/reduxbui.png";
 import "./project.css";
 const Project = () => {
   return (
@@ -190,7 +189,6 @@ const Project = () => {
                   microservices and and synced wiht the help of Edureka.
                   Hibernate ORM has been used for managing the Myswl database.
                 </b>
-
                 <div className="techUsed">
                   <div>
                     <button

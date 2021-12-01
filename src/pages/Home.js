@@ -1,15 +1,15 @@
 import React from "react";
 import "./home.css";
-import Avtar from "./static/Avtar.png";
-import Skils from "./components/Skils";
-import Project from "./components/Project";
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Avtar from "../static/Avtar.png";
+import Skils from "../components/skills/Skils";
+import Project from "../components/project/Project";
+import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/Footer";
+
 const Home = () => {
   const myname = "Aniket";
   const myNameAnnimation = myname.split("");
-
   return (
     <div className="introContainer">
       <div className="avtarContainer">
@@ -27,7 +27,6 @@ const Home = () => {
       </div>
       <div className="nameIntroContainer">
         <p className="nameIntro">Hi, I'm&nbsp;</p>
-
         {myNameAnnimation.map((n, key) => (
           <div key={key} className="nameIntroAnimate">
             {n}
@@ -42,7 +41,6 @@ const Home = () => {
           flavored strongly with love for fast growing startups.
         </div>
       </div>
-
       <div className="briefIntroMobile">
         <div style={{ display: "flex", justifyContent: "center" }}>
           CSE graduate served fresh with a delicious topping
@@ -54,7 +52,6 @@ const Home = () => {
           with love for fast growing startups.
         </div>
       </div>
-
       <br />
       <div className="socialContainer">
         <div className="socialIconContainer">
