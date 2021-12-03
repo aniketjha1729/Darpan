@@ -6,7 +6,7 @@ import Skils from "../components/skills/Skils";
 import Project from "../components/project/Project";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
-
+import { SliderData } from '../components/project/Slider';
 const Home = () => {
   const myname = "Aniket";
   const myNameAnnimation = myname.split("");
@@ -79,7 +79,7 @@ const Home = () => {
         </div>
       </div>
       <Skils />
-      <Project />
+      <Project  slides={SliderData}/>
       <Contact />
       <Footer />
     </div>

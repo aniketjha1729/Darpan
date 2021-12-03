@@ -27,7 +27,7 @@ const Skils = () => {
           dataComplete={80}
           dataLeft={20}
           badgeFillColor="rgb(33,60,70)"
-          skillName="RectJs"
+          skillName="ReactJs"
         />
         <Badge
           dataComplete={57}
