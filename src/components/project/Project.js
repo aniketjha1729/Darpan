@@ -55,6 +55,13 @@ const Project = ({ slides }) => {
             </div>
           );
         })}
+        <div className="dotContainer">
+          {SliderData.map((grid, index) => (
+            <div className="dotWrapper">
+              <div className={index == current ? "dot fill" : "dot"}></div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
