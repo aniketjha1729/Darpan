@@ -1,3 +1,7 @@
+.darkMode {
+  background: rgb(32, 59, 68); /* fallback for old browsers */
+}
+
 .introContainer {
   top: 0;
   z-index: -1;
@@ -109,7 +113,7 @@
 
 @media only screen and (max-width: 600px) {
   .socialContainer {
-    width: 400px;
+    width: 380px;
     margin-left: 0%;
   }
 }
