@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import Avtar from "../static/Avtar.png";
+import Avtar from "../static/Avtar.jpg";
 import Skils from "../components/skills/Skils";
 import Project from "../components/project/Project";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
+import { SliderData } from "../components/project/Slider";
+import { DarkContext } from "../App";
 
 const Home = () => {
+  const { state } = useContext(DarkContext);
   const myname = "Aniket";
   const myNameAnnimation = myname.split("");
   return (
-    <div className="introContainer">
+    <div
+      className={state?.darkMode ? "introContainer darkMode" : "introContainer"}
+    >
       <div className="avtarContainer">
         <img
           className="imageAvtart"
@@ -79,7 +84,7 @@ const Home = () => {
         </div>
       </div>
       <Skils />
-      <Project />
+      <Project slides={SliderData} />
       <Contact />
       <Footer />
     </div>
