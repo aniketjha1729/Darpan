@@ -16,6 +16,7 @@ const Contact = () => {
             width="100%"
             height="100%"
             loading="lazy"
+            key="145"
           ></iframe>
         </div>
         <div className="contactForm">
