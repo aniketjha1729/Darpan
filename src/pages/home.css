@@ -83,6 +83,21 @@
   width: 700px;
   margin-left: 27%;
 }
+
+.voiceAssistance {
+  font-size: 30px;
+  margin-top: 40px;
+}
+.voiceAssistance:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .voiceAssistance {
+    margin-top: 5px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .briefIntroMobile {
     display: none;

@@ -1,16 +1,25 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import "./home.css";
-import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaMicrophone,
+} from "react-icons/fa";
 import Avtar from "../static/Avtar.jpg";
 import Skils from "../components/skills/Skils";
 import Project from "../components/project/Project";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
+import { useSpeechSynthesis } from "react-speech-kit";
 import { SliderData } from "../components/project/Slider";
 import { DarkContext } from "../App";
 
 const Home = () => {
   const { state } = useContext(DarkContext);
+  const [value, setValue] = useState("Hi, I'm Aniket. A CSE graduate served fresh with a delicious topping of Web Development, flavored strongly with love for fast growing startups.");
+  const { speak } = useSpeechSynthesis();
   const myname = "Aniket";
   const myNameAnnimation = myname.split("");
   return (
@@ -37,6 +46,12 @@ const Home = () => {
             {n}
           </div>
         ))}
+        <span className="voiceAssistance">
+          <FaMicrophone
+            onClick={() => speak({ text: value })}
+            color="aliceblue"
+          />
+        </span>
       </div>
       <div className="briefIntro">
         <div>
