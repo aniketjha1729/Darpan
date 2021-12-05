@@ -4,25 +4,6 @@
   padding: 0;
 }
 
-a:link {
-  color: aliceblue;
-}
-
-/* visited link */
-a:visited {
-  color: aliceblue;
-}
-
-/* mouse over link */
-a:hover {
-  color: rgb(216, 217, 218);
-}
-
-/* selected link */
-a:active {
-  color: aliceblue;
-}
-
 body {
   background: rgb(0, 130, 200);
 }

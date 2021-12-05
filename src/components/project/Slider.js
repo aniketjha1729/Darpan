@@ -1,7 +1,7 @@
 export const SliderData = [
   {
     image:
-      "https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "https://images.unsplash.com/photo-1636645096936-fc8704bc8083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=955&q=80",
     projectTile: "EduHub",
     github: "https://github.com/aniketjha1729/EduHub",
     projectDecription:
@@ -9,7 +9,7 @@ export const SliderData = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80",
+      "https://images.unsplash.com/photo-1637637186367-c788b2bbcdb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     projectTile: "SortMyMess",
     github: "https://github.com/aniketjha1729/SortMyMess",
 
@@ -18,7 +18,7 @@ export const SliderData = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+      "https://therecord.media/wp-content/uploads/2021/11/npm-logo-1280x720.png",
     projectTile: "ReduxBuilder",
     github: "https://github.com/aniketjha1729/reduxbuidler",
     projectDecription:

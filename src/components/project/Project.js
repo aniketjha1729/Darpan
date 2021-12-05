@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Cards from "./Cards";
 import { SliderData } from "./Slider";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./project.css";
@@ -58,7 +57,7 @@ const Project = ({ slides }) => {
         <div className="dotContainer">
           {SliderData.map((grid, index) => (
             <div className="dotWrapper">
-              <div className={index == current ? "dot fill" : "dot"}></div>
+              <div className={index === current ? "dot fill" : "dot"}></div>
             </div>
           ))}
         </div>

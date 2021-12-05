@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./skills.css";
-import { Doughnut, Bar, Line } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 import { DarkContext } from "../../App";
 
 const Badge = (props) => {
