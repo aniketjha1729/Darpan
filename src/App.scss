@@ -3,3 +3,16 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-wrapper {
+  width: 1200px;
+  margin-top: 10px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
