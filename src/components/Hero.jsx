@@ -1,4 +1,12 @@
 import React from "react";
+import Avtar from "../assets/Avtar.png";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Button from "@mui/material/Button";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./hero.scss";
 
 const Hero = () => {
@@ -6,25 +14,57 @@ const Hero = () => {
     <div className="hero-container">
       <div className="hero-name">Aniket Kumar</div>
       <div className="hero-intro">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        suscipit perspiciatis illo dolore commodi corporis repudiandae molestias
-        nemo ratione, voluptas, eos magni laudantium nulla doloremque porro non.
-        Culpa, optio porro.
+        <div>
+          CSE graduate served fresh with a delicious topping of Web Development,
+          flavored strongly with love for fast growing startups.
+        </div>
       </div>
       <div className="hero-buttons">
-        <button>one</button>
-        <button>one</button>
+        <div>
+          <Button variant="outlined">Download CV</Button>
+          <Button variant="contained">Let's Talk</Button>
+        </div>
       </div>
       <div className="hero-social">
-        <div className="hero-social-left">Left</div>
+        <div className="hero-social-left">
+          <FacebookIcon
+            sx={{ fontSize: 45 }}
+            style={{ marginBottom: "10px" }}
+          />
+          <LinkedInIcon
+            sx={{ fontSize: 45 }}
+            style={{ marginBottom: "10px" }}
+          />
+          <InstagramIcon
+            sx={{ fontSize: 45 }}
+            style={{ marginBottom: "10px" }}
+          />
+          <TwitterIcon sx={{ fontSize: 45 }} style={{ marginBottom: "10px" }} />
+          <GitHubIcon sx={{ fontSize: 45 }} style={{ marginBottom: "10px" }} />
+        </div>
         <div className="hero-social-middle">
-          <img
-            src="https://images.unsplash.com/photo-1645301188542-6e42abab843c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            alt=""
-            srcset=""
+          <div className="avtar-container">
+            <img src={Avtar} alt="" srcset="" />
+          </div>
+        </div>
+        <div className="hero-social-right">
+          <KeyboardArrowDownIcon
+            sx={{ fontSize: 45 }}
+            style={{ marginBottom: "10px" }}
+          />
+          <KeyboardArrowDownIcon
+            sx={{ fontSize: 45 }}
+            style={{ marginBottom: "10px" }}
+          />
+          <KeyboardArrowDownIcon
+            sx={{ fontSize: 45 }}
+            style={{ marginBottom: "10px" }}
+          />
+          <KeyboardArrowDownIcon
+            sx={{ fontSize: 45 }}
+            style={{ marginBottom: "10px" }}
           />
         </div>
-        <div className="hero-social-right">Right</div>
       </div>
     </div>
   );

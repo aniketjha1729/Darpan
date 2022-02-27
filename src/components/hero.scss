@@ -1,35 +1,81 @@
+$primaryColor: #4285f4;
+$borderS: 1px solid red;
+
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: "Noto Sans", sans-serif;
 }
 
-.hero-intro{
-    width: 50%;
+.hero-name {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  div {
+    width: 70%;
     text-align: center;
+    font-size: 20px;
+    color: #cccccc;
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 40px;
+  div {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
 }
 
 .hero-social {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border: 1px solid blue;
+  align-items: flex-end;
+  color: $primaryColor;
 }
 
-.hero-social-middle{
-    background-color: aqua;
-    height: 400px;
-    width: 300px;
+.hero-social-left {
+  display: flex;
+  flex-direction: column;
+  flex: 20%;
+}
+
+.hero-social-middle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 40%;
+  div {
     display: flex;
-    justify-content: center;
     align-items: flex-end;
-    border-top-left-radius:40% ;
-    border-top-right-radius:40% ;
-    img{
-        height: 300px;
-        width: 250px;
-        
-       
+    width: 290px;
+    height: 350px;
+    border-top-left-radius: 49%;
+    border-top-right-radius: 49%;
+    background: $primaryColor;
+    background: linear-gradient(to bottom, $primaryColor, #302b63);
+    img {
+      width: 275px;
+      height: 290px;
     }
+  }
+}
+
+.hero-social-right {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 20%;
 }
