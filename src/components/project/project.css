@@ -1,5 +1,6 @@
 .projectContainer {
   margin-top: 90px;
+  overflow: hidden;
 }
 
 .projectHeading {
@@ -95,15 +96,15 @@
 
 .slide {
   opacity: 0;
-  transition-duration: 1s ease;
+  transition: all 1s ease;
   display: flex;
-  justify-content: center;
+  transform: translateX(500px);
 }
 
-.slide.active {
+.active {
   opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
+  transition:all 1s ease;
+  justify-content: center;
 }
 
 .cardContainer {

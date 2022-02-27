@@ -30,7 +30,7 @@ const Project = ({ slides }) => {
         {SliderData.map((slide, index) => {
           return (
             <div
-              className={index === current ? "slide active" : "slide"}
+              className={index === current ? "active" : "slide"}
               key={index}
             >
               {index === current && (
