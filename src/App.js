@@ -10,6 +10,8 @@ function App() {
     <div className="container">
       <div className="container-wrapper">
         <Hero />
+        <AboutMe />
+        <Experience />
       </div>
     </div>
   );

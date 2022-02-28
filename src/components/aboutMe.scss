@@ -1,0 +1,98 @@
+@import "models";
+
+.section-container{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.title-header {
+  width: 100%;
+  text-align: center;
+  font-family: $headFont;
+  margin-bottom: 20px;
+  div {
+    &:nth-child(1) {
+      font-size: 15px;
+      color: #cccccc;
+    }
+    &:nth-child(2) {
+      color: $primaryColor;
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+}
+
+.about-body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about-leftContainer {
+  flex: 50%;
+  position: relative;
+}
+
+.backCard {
+  width: 350px;
+  height: 300px;
+  background: linear-gradient(to right, #302b63, $primaryColor);
+  border-radius: 20px;
+}
+
+.frontCard {
+  width: 350px;
+  height: 300px;
+  background: linear-gradient(to right, $primaryColor, #302b63);
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  transform: rotateZ(8deg);
+  img {
+    width: 330px;
+    height: 290px;
+  }
+}
+
+.about-rightContainer {
+  flex: 50%;
+}
+
+.badge-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  div {
+    background-color: $cardColor;
+    color: $primaryColor;
+    border-radius: 10px;
+    width: 150px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 100px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      div {
+        &:nth-child(2) {
+          color: white;
+        }
+        &:nth-child(3) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.about-intro {
+  font-family: $headFont;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+}

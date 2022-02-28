@@ -1,8 +1,8 @@
-$primaryColor: #4285f4;
-$borderS: 1px solid red;
+@import "models";
 
 .hero-container {
-  font-family: "Noto Sans", sans-serif;
+  height: 100vh;
+  font-family: $headFont;
 }
 
 .hero-name {
@@ -14,9 +14,7 @@ $borderS: 1px solid red;
 }
 
 .hero-intro {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  @include centerItem;
   margin-bottom: 40px;
   div {
     width: 70%;
@@ -27,9 +25,7 @@ $borderS: 1px solid red;
 }
 
 .hero-buttons {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  @include centerItem;
   margin-bottom: 40px;
   div {
     display: flex;
@@ -59,21 +55,20 @@ $borderS: 1px solid red;
   div {
     display: flex;
     align-items: flex-end;
-    width: 290px;
+    width: 310px;
     height: 350px;
     border-top-left-radius: 49%;
     border-top-right-radius: 49%;
     background: $primaryColor;
     background: linear-gradient(to bottom, $primaryColor, #302b63);
     img {
-      width: 275px;
+      width: 290px;
       height: 290px;
     }
   }
 }
 
 .hero-social-right {
-  
   display: flex;
   flex-direction: column;
   align-items: flex-end;

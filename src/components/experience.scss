@@ -1,0 +1,58 @@
+@import "models";
+@import "aboutMe";
+
+
+.sectionEx-container{
+  margin-top: 60px;
+}
+.expCard-container {
+  display: flex;
+  justify-content: space-around;
+  flex: 100%;
+  .expCard {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    border-radius: 10px;
+    background-color: $cardColor;
+  }
+}
+
+.expCard-body {
+  width: 90%;
+}
+
+.skillsHeading {
+  color: $primaryColor;
+  font-family: $headFont;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.skills-container {
+  display: flex;
+  flex: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin-top: 20px;
+  flex: 50%;
+}
+
+.skillsName-container {
+  display: flex;
+  align-items: center;
+  div {
+    &:nth-child(2) {
+      font-family: $headFont;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
