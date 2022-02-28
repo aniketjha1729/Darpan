@@ -12,6 +12,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Experience />
+        <Portfolio/>
       </div>
     </div>
   );
