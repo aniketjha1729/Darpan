@@ -27,20 +27,36 @@ const Hero = () => {
       </div>
       <div className="hero-social">
         <div className="hero-social-left">
-          <FacebookIcon
-            sx={{ fontSize: 45 }}
-            style={{ marginBottom: "10px" }}
-          />
-          <LinkedInIcon
-            sx={{ fontSize: 45 }}
-            style={{ marginBottom: "10px" }}
-          />
-          <InstagramIcon
-            sx={{ fontSize: 45 }}
-            style={{ marginBottom: "10px" }}
-          />
-          <TwitterIcon sx={{ fontSize: 45 }} style={{ marginBottom: "10px" }} />
-          <GitHubIcon sx={{ fontSize: 45 }} style={{ marginBottom: "10px" }} />
+          <a href="https://www.facebook.com/aniketjha1729/">
+            <FacebookIcon
+              sx={{ fontSize: 45 }}
+              style={{ marginBottom: "10px" }}
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/aniketjha1729/">
+            <LinkedInIcon
+              sx={{ fontSize: 45 }}
+              style={{ marginBottom: "10px" }}
+            />
+          </a>
+          <a href="https://www.instagram.com/aniketjha1729/">
+            <InstagramIcon
+              sx={{ fontSize: 45 }}
+              style={{ marginBottom: "10px" }}
+            />
+          </a>
+          <a href="https://twitter.com/aniketjha1729">
+            <TwitterIcon
+              sx={{ fontSize: 45 }}
+              style={{ marginBottom: "10px" }}
+            />
+          </a>
+          <a href="https://github.com/aniketjha1729">
+            <GitHubIcon
+              sx={{ fontSize: 45 }}
+              style={{ marginBottom: "10px" }}
+            />
+          </a>
         </div>
         <div className="hero-social-middle">
           <div className="avtar-container">
