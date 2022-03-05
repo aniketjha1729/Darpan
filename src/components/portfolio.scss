@@ -3,8 +3,8 @@
 .potfolio-container {
   display: flex;
   width: 100%;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .portfolio-card {
