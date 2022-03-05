@@ -6,6 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
+import resume from "../assets/resume.pdf";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./hero.scss";
 
@@ -21,7 +22,10 @@ const Hero = () => {
       </div>
       <div className="hero-buttons">
         <div>
-          <Button variant="outlined">Download CV</Button>
+          <a href={resume} download>
+            <Button variant="outlined">Download CV</Button>
+          </a>
+
           <Button variant="contained">Let's Talk</Button>
         </div>
       </div>

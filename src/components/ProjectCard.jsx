@@ -9,7 +9,9 @@ const ProjectCard = (props) => {
       </div>
       <div className="projectTitle">{props.title}</div>
       <div className="projectCode">
-        <Button variant="outlined">Github</Button>
+        <a href={props.github}>
+          <Button variant="outlined">Github</Button>
+        </a>
         <Button variant="contained">Demo</Button>
       </div>
     </div>

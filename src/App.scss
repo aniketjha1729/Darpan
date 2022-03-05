@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
