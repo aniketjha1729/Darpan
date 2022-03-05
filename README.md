@@ -1,1 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Darpan
+
+Portfolio of Aniket Kr Jha.
+
+<p align="center">
+ <img src="snap.png" width="100%" heigth="600">
+</p>
+
