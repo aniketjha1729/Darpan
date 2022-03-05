@@ -38,30 +38,20 @@
 
 .skills-container {
   display: flex;
-  flex: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 30px;
-  @media (max-width: 600px) {
-    display: flex;
-    flex: 100%;
-  }
 }
 
 .skill {
   margin-top: 20px;
-  flex: 50%;
-  .skillCoverage {
-    @media (max-width: 600px) {
-      display: flex;
-      justify-content: center;
-    }
+  flex: 20%;
+  @media (max-width: 600px) {
+    flex: 50%;
   }
 }
 
 .skillsName-container {
   display: flex;
-  align-items: center;
   div {
     &:nth-child(2) {
       font-family: $headFont;
@@ -69,9 +59,16 @@
       color: #cccccc;
     }
   }
+}
+
+.skillCoverage {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.skillCoverageMobile {
+  display: none;
   @media (max-width: 600px) {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }

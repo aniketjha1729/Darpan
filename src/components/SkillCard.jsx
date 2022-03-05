@@ -21,6 +21,17 @@ const SkillCard = ({ data, heading }) => {
                   size="small"
                   defaultValue={skill.rating}
                   max={10}
+                  precision={0.5}
+                  readOnly
+                />
+              </div>
+              <div className="skillCoverageMobile">
+                <Rating
+                  name="customized-10"
+                  size="small"
+                  defaultValue={skill.mRating}
+                  max={5}
+                  precision={0.5}
                   readOnly
                 />
               </div>

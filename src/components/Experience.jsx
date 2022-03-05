@@ -7,48 +7,59 @@ const Experience = () => {
     {
       name: "HTML",
       rating: 9,
+      mRating:4.5
     },
     {
       name: "CSS",
       rating: 8,
+      mRating:4
     },
     {
       name: "JavaScript",
-      rating: 8,
+      rating: 8.5,
+      mRating:4
     },
     {
       name: "Bootstrap",
       rating: 7,
+      mRating:3.5
     },
     {
       name: "MaterialUI",
       rating: 6,
+      mRating:3
     },
     {
       name: "React",
       rating: 7,
+      mRating:3.5
     },
   ]);
   const [backEnd, setBackEnd] = useState([
     {
       name: "NodeJs",
       rating: 8,
+      mRating:4
     },
     {
       name: "MongoDB",
       rating: 7,
+      mRating:3
     },
     {
       name: "MySQL",
-      rating: 8,
+      rating: 4,
+      mRating: 3,
     },
     {
       name: "Pyhon",
-      rating: 8,
+      rating: 6,
+      mRating: 3,
     },
     {
       name: "SpringBoot",
-      rating: 8,
+      rating: 7,
+      mRating: 3.5,
     },
   ]);
   return (
