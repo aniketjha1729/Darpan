@@ -69,8 +69,8 @@ const Experience = () => {
         <div>My Skills & Experience</div>
       </div>
       <div className="expCard-container">
-        <SkillCard heading="FrontEnd Development" data={frontEnd} />
-        <SkillCard heading="BackEnd Development" data={backEnd} />
+        <SkillCard heading="FrontEnd Development" data={frontEnd} setFrontEnd={setFrontEnd} />
+        <SkillCard heading="BackEnd Development" data={backEnd} setBackEnd={setBackEnd} />
       </div>
     </div>
   );

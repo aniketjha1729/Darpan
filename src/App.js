@@ -12,7 +12,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Experience />
-        <Portfolio/>
+        <Portfolio/>  
         <ContactMe/>
       </div>
     </div>

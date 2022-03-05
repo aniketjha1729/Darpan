@@ -6,9 +6,9 @@ const Badge = (props) => {
   return (
     <div>
       <div>
-        {props.icon == "LocalPoliceIcon" ? <LocalPoliceIcon /> : ""}
-        {props.icon == "AccountTreeIcon" ? <AccountTreeIcon /> : ""}
-        {props.icon == "PeopleAltIcon" ? <PeopleAltIcon /> : ""}
+        {props.icon === "LocalPoliceIcon" ? <LocalPoliceIcon /> : ""}
+        {props.icon === "AccountTreeIcon" ? <AccountTreeIcon /> : ""}
+        {props.icon === "PeopleAltIcon" ? <PeopleAltIcon /> : ""}
         <div>{props.title}</div>
         <div>{props.body}</div>
       </div>
