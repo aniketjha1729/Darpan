@@ -1,42 +1,22 @@
-import React, { createContext, useReducer, useContext, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./pages/Home";
-import Resume from "./pages/Resume";
-import { reducer, initialState } from "./reducers/index";
-import "./App.css";
-
-export const DarkContext = createContext();
-
-const Routing = () => {
-  const { dispatch } = useContext(DarkContext);
-  useEffect(() => {
-    const mode = JSON.parse(localStorage.getItem("DARKMODE"));
-    if (mode) {
-      dispatch({ type: "DARKMODE", payload: mode });
-    }
-  }, []);
-
+import React from "react";
+import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
+import ContactMe from "./components/ContactMe";
+import Hero from "./components/Hero";
+import "./App.scss";
+function App() {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/resume" component={Resume} />
-    </Switch>
+    <div className="container">
+      <div className="container-wrapper">
+        <Hero />
+        <AboutMe />
+        <Experience />
+        <Portfolio/>
+        <ContactMe/>
+      </div>
+    </div>
   );
-};
-
-const App = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  return (
-    <>
-      <DarkContext.Provider value={{ state, dispatch }}>
-        <Router>
-          <Navbar />
-          <Routing />
-        </Router>
-      </DarkContext.Provider>
-    </>
-  );
-};
+}
 
 export default App;

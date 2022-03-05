@@ -1,0 +1,10 @@
+$primaryColor: #4285f4;
+$cardColor:#1a407e;
+$borderS: 1px solid red;
+$headFont: "Noto Sans", sans-serif;
+
+@mixin centerItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
