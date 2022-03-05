@@ -8,12 +8,17 @@
   display: flex;
   justify-content: space-around;
   flex: 100%;
+  flex-wrap: wrap;
   .expCard {
     display: flex;
     justify-content: center;
     width: 45%;
     border-radius: 10px;
     background-color: $cardColor;
+    @media (max-width: 600px) {
+      width: 90%;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -37,11 +42,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
+  @media (max-width: 600px) {
+    display: flex;
+    flex: 100%;
+  }
 }
 
 .skill {
   margin-top: 20px;
   flex: 50%;
+  .skillCoverage {
+    @media (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .skillsName-container {
@@ -53,5 +68,10 @@
       font-weight: bold;
       color: #cccccc;
     }
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
