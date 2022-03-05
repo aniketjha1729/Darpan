@@ -1,6 +1,6 @@
 @import "models";
 
-.section-container{
+.section-container {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -19,6 +19,9 @@
       color: $primaryColor;
       font-size: 40px;
       font-weight: bold;
+      @media (max-width: 600px) {
+        font-size: 30px;
+      }
     }
   }
 }
@@ -26,12 +29,16 @@
 .about-body {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .about-leftContainer {
   flex: 50%;
   position: relative;
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .backCard {
@@ -57,6 +64,12 @@
 
 .about-rightContainer {
   flex: 50%;
+  @media (max-width: 600px) {
+    flex: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .badge-container {
@@ -64,6 +77,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  @media (max-width: 600px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
   div {
     background-color: $cardColor;
     color: $primaryColor;
@@ -73,6 +91,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px) {
+      width: 100px;
+      height: 100px;
+    }
     div {
       width: 100px;
       height: 80px;
@@ -80,7 +102,7 @@
       flex-direction: column;
       div {
         &:nth-child(2) {
-          color: white;
+          color: #cccccc;
         }
         &:nth-child(3) {
           font-size: 12px;
@@ -93,6 +115,6 @@
 .about-intro {
   font-family: $headFont;
   font-size: 15px;
-  color: white;
+  color: #cccccc;
   margin-bottom: 20px;
 }
