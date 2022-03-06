@@ -9,13 +9,31 @@ import Button from "@mui/material/Button";
 import resume from "../assets/resume.pdf";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./hero.scss";
+import Typical from "react-typical";
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="hero-name">Aniket Kumar</div>
+      <div className="hero-name">
+        <div> Hello, I'm</div> <div> Aniket Kumar</div>
+      </div>
       <div className="hero-intro">
-        <div>
+        <div className="typical">
+          <Typical
+            loop={Infinity}
+            steps={[
+              "A Full Stack Developer 👨‍💻",
+              1000,
+              "Tech Enthusiast 🕵️‍♂️ ",
+              1000,
+              "A Photographer 📸",
+              1000,
+              "Cross Platform Developer",
+              1000,
+            ]}
+          />
+        </div>
+        <div className="intro-content">
           CSE graduate served fresh with a delicious topping of Web Development,
           flavored strongly with love for fast growing startups.
         </div>
@@ -25,7 +43,6 @@ const Hero = () => {
           <a href={resume} download>
             <Button variant="outlined">Download CV</Button>
           </a>
-
           <Button variant="contained">Let's Talk</Button>
         </div>
       </div>
