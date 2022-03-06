@@ -7,7 +7,7 @@ const Portfolio = () => {
     <div className="sectionEx-container">
       <div className="title-header">
         <div>Visit</div>
-        <div>My Profolio</div>
+        <div>My Portfolio</div>
       </div>
       <div className="potfolio-container">
         <ProjectCard
