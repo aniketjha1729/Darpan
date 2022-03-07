@@ -63,7 +63,7 @@ const Experience = () => {
     },
   ]);
   return (
-    <div className="sectionEx-container">
+    <div data-aos="fade-up" className="section-container ">
       <div className="title-header">
         <div>What Skills I Have</div>
         <div>My Skills & Experience</div>

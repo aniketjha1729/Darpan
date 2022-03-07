@@ -4,7 +4,7 @@ import "./portfolio.scss";
 
 const Portfolio = () => {
   return (
-    <div className="sectionEx-container">
+    <div data-aos="fade-up" className="section-container ">
       <div className="title-header">
         <div>Visit</div>
         <div>My Profolio</div>
