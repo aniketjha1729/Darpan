@@ -25,7 +25,7 @@ const useStyles = makeStyles({
 const ContactMe = () => {
   const classes = useStyles();
   return (
-    <div className="section-container">
+    <div data-aos="fade-up" className="section-container">
       <div className="title-header">
         <div>Get In Touch</div>
         <div>Contact Me</div>

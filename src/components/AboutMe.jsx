@@ -6,7 +6,7 @@ import Badge from "./Badge";
 
 const AboutMe = () => {
   return (
-    <div className="section-container">
+    <div data-aos="fade-up" className="section-container">
       <div className="title-header">
         <div>Get To Know</div>
         <div>About Me</div>
@@ -25,11 +25,7 @@ const AboutMe = () => {
               title="Experience"
               body="3+ Years Working"
             />
-            <Badge
-              icon="PeopleAltIcon"
-              title="Clients"
-              body="10+ Worldwide"
-            />
+            <Badge icon="PeopleAltIcon" title="Clients" body="10+ Worldwide" />
             <Badge
               icon="AccountTreeIcon"
               title="Experience"
