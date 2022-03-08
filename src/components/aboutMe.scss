@@ -1,8 +1,7 @@
 @import "models";
 
 .section-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  height: 100vh;
 }
 
 .title-header {
@@ -31,13 +30,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  @media (max-width: 600px) {
+    padding-top: 20px;
+  }
 }
 
 .about-leftContainer {
   flex: 50%;
   position: relative;
   @media (max-width: 600px) {
-    display: none;
+    padding-left: 42px;
   }
 }
 
@@ -46,6 +48,10 @@
   height: 300px;
   background: linear-gradient(to right, #302b63, $primaryColor);
   border-radius: 20px;
+  @media (max-width: 600px) {
+    width: 300px;
+    height: 250px;
+  }
 }
 
 .frontCard {
@@ -56,15 +62,24 @@
   top: 0;
   border-radius: 20px;
   transform: rotateZ(8deg);
+  @media (max-width: 600px) {
+    width: 300px;
+    height: 250px;
+  }
   img {
     width: 330px;
     height: 290px;
+    @media (max-width: 600px) {
+      width: 300px;
+      height: 250px;
+    }
   }
 }
 
 .about-rightContainer {
   flex: 50%;
   @media (max-width: 600px) {
+    margin-top: 60px;
     flex: 100%;
     text-align: center;
     display: flex;
@@ -78,6 +93,7 @@
   justify-content: space-between;
   margin-bottom: 20px;
   @media (max-width: 600px) {
+    margin-bottom: 25px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -118,4 +134,9 @@
   color: #cccccc;
   margin-bottom: 20px;
   padding: 5px;
+  .halfIntro {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
 }

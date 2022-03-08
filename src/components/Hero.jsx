@@ -13,7 +13,7 @@ import Typical from "react-typical";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+    <div data-aos="fade-up" className="hero-container">
       <div className="hero-name">
         <div> Hello, I'm</div> <div> Aniket Kumar</div>
       </div>
@@ -85,22 +85,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-social-right">
-          <KeyboardArrowDownIcon
-            sx={{ fontSize: 45 }}
-            style={{ marginBottom: "10px" }}
-          />
-          <KeyboardArrowDownIcon
-            sx={{ fontSize: 45 }}
-            style={{ marginBottom: "10px" }}
-          />
-          <KeyboardArrowDownIcon
-            sx={{ fontSize: 45 }}
-            style={{ marginBottom: "10px" }}
-          />
-          <KeyboardArrowDownIcon
-            sx={{ fontSize: 45 }}
-            style={{ marginBottom: "10px" }}
-          />
+          {["", "", "", ""].map((data) => (
+            <KeyboardArrowDownIcon
+              sx={{ fontSize: 45 }}
+              style={{ marginBottom: "10px" }}
+            />
+          ))}
         </div>
       </div>
     </div>

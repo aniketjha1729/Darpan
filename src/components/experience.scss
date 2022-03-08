@@ -6,10 +6,13 @@
   justify-content: space-around;
   flex: 100%;
   flex-wrap: wrap;
+  margin-top: 55px;
+  height: 60vh;
   .expCard {
+    padding: 20px;
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 47%;
     border-radius: 10px;
     background-color: $cardColor;
     @media (max-width: 600px) {
